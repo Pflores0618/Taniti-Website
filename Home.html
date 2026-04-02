@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="tanitilogo.jpg" class="taniti-logo" alt="Taniti Island Logo">
+            <h1>Taniti Island</h1>
+        </header>
+        <section>
+            <nav>
+                <a href="Home.html" class="button">Home</a>
+                <a href="Activities.html" class="button">Activites</a>
+                <a href="Dining.html" class="button">Dining</a>
+                <a href="Lodging.html" class="button">Lodging</a>
+                <a href="Transportation.html" class="button">Transportation</a>
+                <a href="FAQ.html" class="button">FAQ</a>
+                <a href="Book.html" class="button">Book</a>
+            </nav>
+        </section>
+
+        <main>
+            <section class="hero">
+                <div class="hero-overlay">
+                    <h2 class="hero-heading">Welcome to the Island of Taniti!</h2>
+                    <p class="hero-sub">We are so happy to have you.</p>
+                    <a href="Book.html" class="button book-btn">Plan Your Trip</a>
+                </div>
+                <img src="tanitihero.jpg" class="hero-photo" alt="Photo of Island of Taniti" />
+            </section>
+
+            <section class="highlight-section">
+                <h2 class="section-title">Highlighted Activities</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <img src="snorkling.jpg" alt="Snorkeling" class="card-img" />
+                        <h3>Snorkeling &amp; Diving</h3>
+                        <p>Explore Taniti's crystal-clear waters.</p>
+                        <a href="activities.html" class="button">Learn More</a>
+                    </div>
+                <div class="highlight-card">
+                    <img src="volcano hike.jpg" alt="Volcano Hike" class="card-img" />
+                    <h3>Volcano Hike</h3>
+                    <p>Trek to the summit of our stunning volcano.</p>
+                    <a href="activities.html" class="button">Learn More</a>
+                </div>
+                <div class="highlight-card">
+                    <img src="dining.jpg" alt="Local Culture" class="card-img" />
+                    <h3>Culture &amp; Dining</h3>
+                    <p>Taste local cuisine and explore our heritage.</p>
+                    <a href="activities.html" class="button">Learn More</a>
+                </div>
+                </div>
+            </section>
+
+            <section class="book-section">
+                <h2 class="section-title">Book a Trip Here</h2>
+                    <div class="book-links">
+                        <a href="lodging.html" class="button">Lodging</a>
+                        <a href="transportation.html" class="button">Transportation with Us</a>
+                        <a href="dining.html" class="button">Dining</a>
+                        <a href="activities.html" class="button">Activities</a>
+                    </div>
+            </section>
+
+            <div class="reviews">
+                <h2>Reviews</h2>
+                <p>If you have visited the beautiful Taniti please leave a gracious review for our site! Let be a reflection on how our site assisted you and gave you more insight on our island Taniti!</p>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-text">"An absolutely breathtaking island. The snorkeling was unlike anything I have ever experienced!"</p>
+                        <p class="reviewer-name">— Kate T.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="review-text">"The local food was incredible and the people were so welcoming. We will definitely be back!"</p>
+                        <p class="reviewer-name">— Genesis M.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                        <p class="review-text">"Loved the volcano hike. The views from the top were completely worth every step of the climb."</p>
+                        <p class="reviewer-name">— Jackson K.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <form id="feedback" action="">
+                    <div class="pinfo">Please Leave Your Feeback Here:</div>
+  
+                <div class="form-group">
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input  name="name" placeholder="Your Name..." class="form-control"  type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input name="email" type="email" class="form-control" placeholder="Your Email...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pinfo">Rate our overall services.</div>
+  
+
+                <div class="form-group">
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-heart"></i></span>
+                            <select class="form-control" id="rate">
+                                <option value="1star">1</option>
+                                <option value="2stars">2</option>
+                                <option value="3stars">3</option>
+                                <option value="4stars">4</option>
+                                <option value="5stars">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pinfo">Write your feedback.</div>
+  
+
+                <div class="form-group">
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                            <textarea class="form-control" id="review" rows="3"></textarea>
+ 
+                        </div>
+                    </div>
+                </div>
+
+                 <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                </form>
+                <div id="feedback-confirm" style="display:none; text-align:center; padding: 40px 20px;">
+                    <i class="fa-solid fa-circle-check" style="font-size: 48px; color: #2a6b4f; margin-bottom: 16px;"></i>
+                    <h2 style="color: #2a6b4f; margin-bottom: 10px;">Thank You for Your Feedback!</h2>
+                    <p style="color: #555; font-size: 15px;">We appreciate you taking the time to share your experience on Taniti. Your review helps future visitors plan their perfect trip!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <p>
+                Taniti Tourism Board &middot;
+            <a href="contact.html">Contact Us</a> &middot;
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="accessibility.html">Accessibility</a>
+            </p>
+            <p class="footer-copy">&copy; 2024 Taniti Island Government. All rights reserved.</p>
+            <p class="footer-copy" style="margin-top: 8px;">
+        Image Credits: All images courtesy of 
+        <a href="https://www.unsplash.com" target="_blank">Unsplash</a>  
+        Used under their respective free-use licenses.
+    </p>
+        </footer>
+
+        <script>
+            function filterSection(category, btn) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+ 
+                document.querySelectorAll('.highlight-section').forEach(section => {
+                    if (category === 'all' || section.id === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+        <script>
+            document.getElementById('feedback').addEventListener('submit', function(e) {
+                e.preventDefault();
+                this.style.display = 'none';
+                document.getElementById('feedback-confirm').style.display = 'block';
+            });
+        </script>
+    </body>
+</html>

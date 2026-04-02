@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="tanitilogo.jpg" class="taniti-logo" alt="Taniti Island Logo">
+            <h1>Taniti Island</h1>
+        </header>
+        <section>
+            <nav>
+                <a href="Home.html" class="button">Home</a>
+                <a href="Activities.html" class="button">Activites</a>
+                <a href="Dining.html" class="button">Dining</a>
+                <a href="Lodging.html" class="button">Lodging</a>
+                <a href="Transportation.html" class="button">Transportation</a>
+                <a href="FAQ.html" class="button">FAQ</a>
+                <a href="Book.html" class="button">Book</a>
+            </nav>
+        </section>
+
+ 
+        <section class="page-hero">
+            <h2 class="page-hero-title">Book Your Taniti Trip</h2>
+            <p class="page-hero-sub">Fill out the form below to request your lodging, dining, activities, and transportation all in one place.</p>
+        </section>
+ 
+        <main class="container">
+            <section class="highlight-section">
+ 
+                <form id="booking-form" class="feedback-form" action="" method="post" novalidate>
+ 
+                    <!-- PERSONAL INFO -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">
+                            <i class="fa fa-user" style="color: #2a6b4f;"></i> Your Information
+                        </legend>
+ 
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input id="full-name" name="full-name" type="text" class="form-control" placeholder="John Doe" required />
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" type="email" class="form-control" placeholder="john.doe@example.com" required />
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="tel" class="form-control" placeholder="+1 (555) 000-0000" />
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" class="form-control">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5+">5 or more Guests</option>
+                            </select>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="checkin">Check-in Date</label>
+                            <input id="checkin" name="checkin" type="date" class="form-control" required />
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="checkout">Check-out Date</label>
+                            <input id="checkout" name="checkout" type="date" class="form-control" required />
+                        </div>
+ 
+                    </fieldset>
+ 
+                    <!-- LODGING -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">
+                            <i class="fa fa-hotel" style="color: #2a6b4f;"></i> Lodging
+                        </legend>
+ 
+                        <div class="form-group">
+                            <label for="lodging-type">Lodging Type</label>
+                            <select id="lodging-type" name="lodging-type" class="form-control">
+                                <option value="">-- Select lodging type --</option>
+                                <option value="beach-resort">Taniti Beach Resort</option>
+                                <option value="city-hotel">Taniti City Hotel</option>
+                                <option value="lagoon-resort">Lagoon View Resort</option>
+                                <option value="bnb-morning">Island Morning B&amp;B</option>
+                                <option value="bnb-rainforest">Rainforest Retreat B&amp;B</option>
+                                <option value="bnb-sunrise">Sunrise Cove B&amp;B</option>
+                                <option value="hostel">Taniti Backpackers Hostel</option>
+                                <option value="camping">Island Camping Grounds</option>
+                                <option value="guesthouse">Local Guesthouse</option>
+                            </select>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="room-type">Room Preference</label>
+                            <select id="room-type" name="room-type" class="form-control">
+                                <option value="">-- Select room type --</option>
+                                <option value="single">Single</option>
+                                <option value="double">Double</option>
+                                <option value="family">Family Suite</option>
+                                <option value="dorm">Dorm Bed</option>
+                            </select>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="lodging-notes">Special Requests for Lodging</label>
+                            <textarea id="lodging-notes" name="lodging-notes" class="form-control" rows="3" placeholder="e.g. ocean view, accessibility needs, early check-in..."></textarea>
+                        </div>
+ 
+                    </fieldset>
+ 
+                    <!-- ACTIVITIES -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">
+                            <i class="fa fa-person-swimming" style="color: #2a6b4f;"></i> Activities &amp; Tours
+                        </legend>
+ 
+                        <div class="form-group">
+                            <label>Select Activities (choose all that apply)</label>
+ 
+                            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="snorkeling" />
+                                    <i class="fa fa-fish" style="color: #2a6b4f;"></i>
+                                    Snorkeling &amp; Diving — From $45/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="boat-tour" />
+                                    <i class="fa fa-sailboat" style="color: #2a6b4f;"></i>
+                                    Boat Tours — From $60/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="surfing" />
+                                    <i class="fa fa-person-swimming" style="color: #2a6b4f;"></i>
+                                    Swimming &amp; Surf Lessons — From $30/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="volcano" />
+                                    <i class="fa fa-volcano" style="color: #2a6b4f;"></i>
+                                    Volcano Hike — From $55/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="zipline" />
+                                    <i class="fa fa-tree" style="color: #2a6b4f;"></i>
+                                    Rainforest Zip Line — From $70/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="wildlife" />
+                                    <i class="fa fa-binoculars" style="color: #2a6b4f;"></i>
+                                    Wildlife &amp; Bird Watching — From $30/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="village-tour" />
+                                    <i class="fa fa-masks-theater" style="color: #2a6b4f;"></i>
+                                    Cultural Village Tour — From $35/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="food-tour" />
+                                    <i class="fa fa-utensils" style="color: #2a6b4f;"></i>
+                                    Local Food Tour — From $40/person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="activity" value="museum" />
+                                    <i class="fa fa-building-columns" style="color: #2a6b4f;"></i>
+                                    Taniti History Museum — $10/person
+                                </label>
+ 
+                            </div>
+                        </div>
+ 
+                        <div class="form-group" style="margin-top: 16px;">
+                            <label for="activity-notes">Activity Notes or Questions</label>
+                            <textarea id="activity-notes" name="activity-notes" class="form-control" rows="3" placeholder="e.g. preferred dates for specific activities, group size, accessibility needs..."></textarea>
+                        </div>
+ 
+                    </fieldset>
+ 
+                    <!-- DINING -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">
+                            <i class="fa fa-utensils" style="color: #2a6b4f;"></i> Dining Reservations
+                        </legend>
+ 
+                        <div class="form-group">
+                            <label>Select Restaurants (choose all that apply)</label>
+ 
+                            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="dining" value="fish-grill" />
+                                    <i class="fa fa-fire-burner" style="color: #2a6b4f;"></i>
+                                    Fish &amp; Grill — $20+ per person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="dining" value="taniti-seafood" />
+                                    <i class="fa fa-bowl-food" style="color: #2a6b4f;"></i>
+                                    Taniti Seafood — $30+ per person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="dining" value="fresh-tan-fish" />
+                                    <i class="fa fa-star" style="color: #2a6b4f;"></i>
+                                    Fresh Tan-Fish — $40+ per person (Reservations only)
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="dining" value="texas-roadhouse" />
+                                    <i class="fa fa-cow" style="color: #2a6b4f;"></i>
+                                    Texas Roadhouse — $15+ per person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="dining" value="cheddars" />
+                                    <i class="fa fa-plate-wheat" style="color: #2a6b4f;"></i>
+                                    Cheddar's — $15+ per person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="dining" value="hot-pot" />
+                                    <i class="fa fa-pepper-hot" style="color: #2a6b4f;"></i>
+                                    Hot Pot — $35 per person
+                                </label>
+ 
+                                <label class="activity-check">
+                                    <input type="checkbox" name="dining" value="hibachi-sushi" />
+                                    <i class="fa fa-drumstick-bite" style="color: #2a6b4f;"></i>
+                                    Hibachi &amp; Sushi — $15+ per person
+                                </label>
+ 
+                            </div>
+                        </div>
+ 
+                        <div class="form-group" style="margin-top: 16px;">
+                            <label for="dining-date">Preferred Dining Date</label>
+                            <input id="dining-date" name="dining-date" type="date" class="form-control" />
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="dining-time">Preferred Dining Time</label>
+                            <select id="dining-time" name="dining-time" class="form-control">
+                                <option value="">-- Select a time --</option>
+                                <option value="lunch">Lunch (11am – 2pm)</option>
+                                <option value="early-dinner">Early Dinner (5pm – 7pm)</option>
+                                <option value="dinner">Dinner (7pm – 9pm)</option>
+                            </select>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="dining-notes">Dining Notes or Dietary Requirements</label>
+                            <textarea id="dining-notes" name="dining-notes" class="form-control" rows="2" placeholder="e.g. vegetarian, allergies, special occasions..."></textarea>
+                        </div>
+ 
+                    </fieldset>
+ 
+                    <!-- TRANSPORTATION -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">
+                            <i class="fa fa-car" style="color: #2a6b4f;"></i> Transportation &amp; Rentals
+                        </legend>
+ 
+                        <div class="form-group">
+                            <label for="transport-type">Transportation Type</label>
+                            <select id="transport-type" name="transport-type" class="form-control">
+                                <option value="">-- Select an option --</option>
+                                <option value="car">Car Rental — From $45/day</option>
+                                <option value="scooter">Scooter Rental — From $25/day</option>
+                                <option value="bicycle">Bicycle Rental — From $15/day</option>
+                                <option value="taxi">Taxi Service</option>
+                                <option value="none">No transportation needed</option>
+                            </select>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="pickup">Preferred Pick-up Location</label>
+                            <select id="pickup" name="pickup" class="form-control">
+                                <option value="">-- Select location --</option>
+                                <option value="airport">Taniti Airport</option>
+                                <option value="harbor">Taniti Harbor</option>
+                                <option value="city">Taniti City Center</option>
+                                <option value="hotel">My Lodging Address</option>
+                            </select>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="transport-notes">Transportation Notes</label>
+                            <textarea id="transport-notes" name="transport-notes" class="form-control" rows="2" placeholder="e.g. arrival time, specific pick-up address..."></textarea>
+                        </div>
+ 
+                    </fieldset>
+ 
+                    <!-- SUBMIT -->
+                    <button type="submit" class="button book-btn submit-btn">
+                        <i class="fa fa-paper-plane"></i> Submit Booking Request
+                    </button>
+ 
+                </form>
+
+                <div id="booking-confirm" style="display:none; text-align:center; padding: 40px 20px;">
+                    <i class="fa-solid fa-circle-check" style="font-size: 48px; color: #2a6b4f; margin-bottom: 16px;"></i>
+                    <h2 style="color: #2a6b4f; margin-bottom: 10px;">Booking Request Received!</h2>
+                    <p style="color: #555; font-size: 15px;">Thank you for choosing Taniti! We have received your booking request and will be in touch within 24 hours to confirm your arrangements.</p>
+                    <p style="color: #555; font-size: 14px; margin-top: 10px;">In the meantime feel free to explore our <a href="Activities.html" style="color: #2a6b4f;">Activities</a> and <a href="FAQ.html" style="color: #2a6b4f;">FAQ</a> pages.</p>
+                </div>
+ 
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>
+                Taniti Tourism Board &middot;
+            <a href="contact.html">Contact Us</a> &middot;
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="accessibility.html">Accessibility</a>
+            </p>
+            <p class="footer-copy">&copy; 2024 Taniti Island Government. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function filterSection(category, btn) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+ 
+                document.querySelectorAll('.highlight-section').forEach(section => {
+                    if (category === 'all' || section.id === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+        <script>
+            document.getElementById('booking-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                this.style.display = 'none';
+                document.getElementById('booking-confirm').style.display = 'block';
+            });
+        </script>
+    </body>
+</html>

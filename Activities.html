@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="tanitilogo.jpg" class="taniti-logo" alt="Taniti Island Logo">
+            <h1>Taniti Island</h1>
+        </header>
+        <section>
+            <nav>
+                <a href="Home.html" class="button">Home</a>
+                <a href="Activities.html" class="button">Activites</a>
+                <a href="Dining.html" class="button">Dining</a>               
+                <a href="Lodging.html" class="button">Lodging</a>
+                <a href="Transportation.html" class="button">Transportation</a>
+                <a href="FAQ.html" class="button">FAQ</a>
+                <a href="Book.html" class="button">Book</a>
+            </nav>
+        </section>
+
+        <!--<section class="page-hero">
+            <h2 class="page-hero-title">Activities &amp; Attractions</h2>
+            <img src="tanitihero.jpg" class="hero-photo" alt="Photo of Island of Taniti" />
+            <p class="page-hero-sub">Discover everything Taniti has to offer - adventure, culture, and relaxation all in one place.</p>
+        </section>-->
+        <section class="hero">
+                <div class="hero-overlay">
+                    <h2 class="hero-heading">Activites &amp; Attractions</h2>
+                    <p class="hero-sub">Discover everything Taniti has to offer - adventure, culture, and relaxation all in one place</p>
+                    <a href="Book.html" class="button book-btn">Plan Your Trip</a>
+                </div>
+                <img src="zip line.jpg" class="hero-photo" alt="Photo of Zipline on Island of Taniti" />
+        </section>
+
+        <main class="container">
+
+            <div class="book-links" style="padding: 24px 0 8px; justify-content: flex-start;">
+                <span style="font-size: 14px; color: #555; font-weight: bold; line-height: 2.2;">Filter by:</span>
+                <button class="filter-btn active" onclick="filterSection('all', this)">All</button>
+                <button class="filter-btn" onclick="filterSection('outdoors', this)">Outdoors</button>
+                <button class="filter-btn" onclick="filterSection('water', this)">Water</button>
+                <button class="filter-btn" onclick="filterSection('culture', this)">Culture</button>
+                <button class="filter-btn" onclick="filterSection('nightlife', this)">Nightlife</button>
+            </div>
+
+            <section class="highlight-section" id="water">
+                <h2 class="section-title">
+                    <i class="fa fa-water"></i>Water Activities
+                </h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card" data-category="water">
+                        <i class="fa-solid fa-fish fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Snorkeling &amp; Diving</h3>
+                        <p>Explore vibrant coral reefs and tropical fish in Taniti's warm, crystal-clear waters. Equipment rentals avaliable at the marina.</p>
+                        <p><small>Half-day  ~  From $45 per person</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="water">
+                        <i class="fa-solid fa-sailboat fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Boat Tours</h3>
+                        <p>Description</p>
+                        <p><small>3 Hours  ~  From $60 per person</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="water">
+                        <i class="fa-solid fa-person-swimming fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Swimming &amp; Surfing</h3>
+                        <p>Description</p>
+                        <p><small>All Day  ~  Free entry to beaches</small></p>
+                        <a href="book.html" class="button book-btn">Book Lessons</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="highlight-section" id="outdoors">
+                <h2 class="section-title">
+                    <i class="fa-solid fa-mountain"></i>Outdoor Adventures
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="outdoors">
+                        <i class="fa-solid fa-volcano fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Volcano Hike</h3>
+                        <p>Describe</p>
+                        <p><small> Day  ~  Guided tours from $55</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="outdoors">
+                        <i class="fa-solid fa-tree fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Rainforest Zip Line</h3>
+                        <p>Describe</p>
+                        <p><small>2 Hours  ~  $70 per person</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="outdoors">
+                        <i class="fa-solid fa-binoculars fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Wildlife &amp; Bird Watching</h3>
+                        <p>Describe</p>
+                        <p><small>Tours  ~  $30 per person</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="highlight-section" id="culture">
+                <h2 class="section-title">
+                    <i class="fa-solid fa-landmark"></i>Culture &amp; History
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="culture">
+                        <i class="fa-solid fa-masks-theater fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Cultural Village Tour</h3>
+                        <p>Describe</p>
+                        <p><small>Half-day  ~  $35 per person</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="culture">
+                        <i class="fa-solid fa-utensils fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Local Food Tour</h3>
+                        <p>Enjoy this food tour to Tanitis famous food areas such as the local pubs, microbrewery, and famous restraunts</p>
+                        <p><small>3 Hours  ~  $40 per person</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="culture">
+                        <i class="fa-solid fa-building-columns fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Taniti Art and History Museum</h3>
+                        <p>Describe</p>
+                        <p><small>Self-Guided ~  $10 per person</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="highlight-section" id="nightlife">
+                <h2 class="section-title">
+                    <i class="fa-solid fa-music"></i>Nightlife &amp; Entertainment
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="nightlife">
+                        <i class="fa-solid fa-martini-glass fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Bars &amp; Nightclubs</h3>
+                        <p>Description</p>
+                        <p><small>Evenings  ~  Varies by venue</small></p>
+                        <a href="" class="button book-btn">See Venues</a>
+                    </div>
+
+
+                    <div class="highlight-card" data-category="nightlife">
+                        <i class="fa-solid fa-bowling-ball fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Bowling &amp; Mini Golf</h3>
+                        <p>Description</p>
+                        <p><small>Evenings  ~  $15 per person</small></p>
+                        <a href="book.html" class="button book-btn">See Venues</a>
+                    </div>
+
+
+                    <div class="highlight-card" data-category="nightlife">
+                        <i class="fa-solid fa-film fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Movie Theater</h3>
+                        <p>Description</p>
+                        <p><small>Nightly  ~  $13 per ticket per movie</small></p>
+                        <a href="book.html" class="button book-btn">See Venues</a>
+                    </div>
+
+                </div>    
+            </section>
+
+        </main>
+
+
+        <footer class="site-footer">
+            <p>
+                Taniti Tourism Board &middot;
+            <a href="contact.html">Contact Us</a> &middot;
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="accessibility.html">Accessibility</a>
+            </p>
+            <p class="footer-copy">&copy; 2024 Taniti Island Government. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function filterSection(category, btn) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+ 
+                document.querySelectorAll('.highlight-section').forEach(section => {
+                    if (category === 'all' || section.id === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>       

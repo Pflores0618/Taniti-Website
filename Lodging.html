@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="tanitilogo.jpg" class="taniti-logo" alt="Taniti Island Logo">
+            <h1>Taniti Island</h1>
+        </header>
+        <section>
+            <nav>
+                <a href="Home.html" class="button">Home</a>
+                <a href="Activities.html" class="button">Activites</a>
+                <a href="Dining.html" class="button">Dining</a>                
+                <a href="Lodging.html" class="button">Lodging</a>
+                <a href="Transportation.html" class="button">Transportation</a>
+                <a href="FAQ.html" class="button">FAQ</a>
+                <a href="Book.html" class="button">Book</a>
+            </nav>
+        </section>
+
+        <!--<section class="page-hero">
+            <h2 class="page-hero-title">Lodging At Taniti</h2>
+            <p class="page-hero-sub">Taniti has many lodging options to offer from resorts to hostels! Find the perfect place to stay here for your island adventures.</p>
+        </section>-->
+        <section class="hero">
+                <div class="hero-overlay">
+                    <h2 class="hero-heading">Lodging At Taniti </h2>
+                    <p class="hero-sub">Taniti has many lodging options to offer from resorts to hostels! Find the perfect place to stay here for your island adventures.</p>
+                    <a href="Book.html" class="button book-btn">Plan Your Trip</a>
+                </div>
+                <img src="resort.jpg" class="hero-photo" alt="Photo of Lodging on Island of Taniti" />
+        </section>
+
+        <main class="container">
+
+            <div class="book-links" style="padding: 24px 0 8px; justify-content: flex-start;">
+                <span style="font-size: 14px; color: #555; font-weight: bold; line-height: 2.2;">Filter by:</span>
+                <button class="filter-btn active" onclick="filterSection('all', this)">All</button>
+                <button class="filter-btn" onclick="filterSection('hotels', this)">Hotels</button>
+                <button class="filter-btn" onclick="filterSection('bnb', this)">AirBnB</button>
+                <button class="filter-btn" onclick="filterSection('budget', this)">Budget</button>
+            </div>
+
+            <section class="highlight-section" id="hotels">
+                <h2 class="section-title">
+                    <i class="fa fa-hotel"></i>Hotels &amp; Resorts
+                </h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card" data-category="hotels">
+                        <i class="fa fa-star fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Beach Resort</h3>
+                        <p>Beautiful beach resort located right in front of the beach allowing guests to have beautiful beach views and immediate access to the beach/</p>
+                        <p><small> From $400 per night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="hotels">
+                        <i class="fa fa-building fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>City Side Luxury Hotel</h3>
+                        <p>Enjoy a time in the luxury hotel in the center of the city allowing immediate access to all city attractions.</p>
+                        <p><small>$400 per Night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="hotels">
+                        <i class="fa fa-budget fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Hilton Hotel</h3>
+                        <p>Economic hotel that is located close to the city and beach providing access to both!</p>
+                        <p><small>From $200 per Night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="highlight-section" id="bnb">
+                <h2 class="section-title">
+                    <i class="fa fa-house"></i>BNB &amp; AirBNB
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="bnb">
+                        <i class="fa fa-moring fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Island Breakfast Morning</h3>
+                        <p>Enjoy a breakfast and bed experience at this local island home close to the beach front!</p>
+                        <p><small>From $100 per Night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="bnb">
+                        <i class="fa fa-island fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Island Theme AirBNB</h3>
+                        <p>This island theme Airbnb is located in between the city and beach front!</p>
+                        <p><small>from $85 per Night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="bnb">
+                        <i class="fa fa-sun fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Beach Sunrise House</h3>
+                        <p>Enjoy the sunrise with a view of the beachfront at this amazing beach home!</p>
+                        <p><small>From $75 per Night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="highlight-section" id="budget">
+                <h2 class="section-title">
+                    <i class="fa fa-coins"></i>Budget Housing
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="budget">
+                        <i class="fa fa-bed fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Taniti Hostel</h3>
+                        <p>A clean, friendly hostel in Taniti City popular with solo travelers and young adventurers. Shared kitchen available.</p>
+                        <p><small>From $30 per Night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="budget">
+                        <i class="fa fa-camp fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Taniti Camping Grounds</h3>
+                        <p>Experience Taniti under the stars at our designated camping area near the beach. Facilities and showers on site.</p>
+                        <p><small>From $15 Per Lot Per Night</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer class="site-footer">
+            <p>
+                Taniti Tourism Board &middot;
+            <a href="contact.html">Contact Us</a> &middot;
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="accessibility.html">Accessibility</a>
+            </p>
+            <p class="footer-copy">&copy; 2024 Taniti Island Government. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function filterSection(category, btn) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+ 
+                document.querySelectorAll('.highlight-section').forEach(section => {
+                    if (category === 'all' || section.id === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+    </body>
+</html>       

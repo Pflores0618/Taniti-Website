@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="tanitilogo.jpg" class="taniti-logo" alt="Taniti Island Logo">
+            <h1>Taniti Island</h1>
+        </header>
+        <section>
+            <nav>
+                <a href="Home.html" class="button">Home</a>
+                <a href="Activities.html" class="button">Activites</a>
+                <a href="Dining.html" class="button">Dining</a>
+                <a href="Lodging.html" class="button">Lodging</a>
+                <a href="Transportation.html" class="button">Transportation</a>
+                <a href="FAQ.html" class="button">FAQ</a>
+                <a href="Book.html" class="button">Book</a>
+            </nav>
+        </section>
+
+        <!--<section class="page-hero">
+            <h2 class="page-hero-title">Transportation</h2>
+            <p class="page-hero-sub">Discover everything Taniti has to offer to help get around the island efficently.</p>
+        </section>-->
+        <section class="hero">
+                <div class="hero-overlay">
+                    <h2 class="hero-heading">Transportation </h2>
+                    <p class="hero-sub">Discover everything Taniti has to offer to help get around the island efficently.</p>
+                    <a href="Book.html" class="button book-btn">Plan Your Trip</a>
+                </div>
+                <img src="transportation.jpg" class="hero-photo" alt="Photo of Transportation on Island of Taniti" />
+        </section>
+
+        <main class="container">
+
+            <div class="book-links" style="padding: 24px 0 8px; justify-content: flex-start;">
+                <span style="font-size: 14px; color: #555; font-weight: bold; line-height: 2.2;">Filter by:</span>
+                <button class="filter-btn active" onclick="filterSection('all', this)">All</button>
+                <button class="filter-btn" onclick="filterSection('Bus', this)">Local</button>
+                <button class="filter-btn" onclick="filterSection('rentals', this)">Rentals</button>
+            </div>
+
+            <section class="highlight-section" id="Bus">
+                <h2 class="section-title">
+                    <i class="fa fa-location"></i>Locally Getting Around The Island
+                </h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card" data-category="Bus">
+                        <i class="fa fa-bus fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Public Bus</h3>
+                        <p>Taniti offers a local public bus that allows you to move around the city in local routes. Bus fees vary but run all day from 5am to 11pm!</p>
+                        <p><small>Daily  ~  Low costs daily</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="Bus">
+                        <i class="fa fa-taxi fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Taxis &amp; Ubers</h3>
+                        <p>Taniti offers local taxis that will vary from prices based on the length of the arrival and destination. Taniti also offers popular services such as lyft and Uber which are more convienant for late night adventures.</p>
+                        <p><small>Avaliable 24/7  ~  Cost Varies</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="Bus">
+                        <i class="fa fa-walking fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Walking</h3>
+                        <p>Many destinations in Taniti are very walkable! Many restraunts, hotels, and attractions are at walkable distance from each other making it very easy to travel walking.</p>
+                        <p><small>Free  ~  Best in the City</small></p>
+                        <a href="book.html" class="button book-btn">Get Started</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="highlight-section" id="rentals">
+                <h2 class="section-title">
+                    <i class="fa fa-rent"></i>Vehicle Rentals
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="rentals">
+                        <i class="fa fa-car fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Car Rentals</h3>
+                        <p>Car rentals are avaliable to any one above the age of 25 and a valid driver's license. Rental agencies are avaliable in the center of the City and one located at the Taniti airport.</p>
+                        <p><small> Avaliable From 6am - 10pm  ~  Prices Vary on Car</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="rentals">
+                        <i class="fa fa-bike fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Bicycle &amp; Scooter Rentals</h3>
+                        <p>Bicycle and Scooter rentals will be located locally in the center of Taniti City. Each will be parked at a designated spot and must be returned to the designated spot when done.</p>
+                        <p><small>Avaliable all Day  ~  Pay per mile</small></p>
+                        <a href="book.html" class="button book-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer class="site-footer">
+            <p>
+                Taniti Tourism Board &middot;
+            <a href="contact.html">Contact Us</a> &middot;
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="accessibility.html">Accessibility</a>
+            </p>
+            <p class="footer-copy">&copy; 2024 Taniti Island Government. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function filterSection(category, btn) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+ 
+                document.querySelectorAll('.highlight-section').forEach(section => {
+                    if (category === 'all' || section.id === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+    </body>
+</html>       

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="tanitilogo.jpg" class="taniti-logo" alt="Taniti Island Logo">
+            <h1>Taniti Island</h1>
+        </header>
+        <section>
+            <nav>
+                <a href="Home.html" class="button">Home</a>
+                <a href="Activities.html" class="button">Activites</a>
+                <a href="Dining.html" class="button">Dining</a>
+                <a href="Lodging.html" class="button">Lodging</a>
+                <a href="Transportation.html" class="button">Transportation</a>
+                <a href="FAQ.html" class="button">FAQ</a>
+                <a href="Book.html" class="button">Book</a>
+            </nav>
+        </section>
+<!--
+        <section class="page-hero">
+            <h2 class="page-hero-title">Dining in Taniti</h2>
+            <p class="page-hero-sub">Taniti has a variety of restraunts and supermarkets that are avaliable for all diets!</p>
+        </section>-->
+        <section class="hero">
+                <div class="hero-overlay">
+                    <h2 class="hero-heading">Dining in Taniti</h2>
+                    <p class="hero-sub">Taniti has a variety of restraunts and supermarkets that are avaliable for all diets!</p>
+                    <a href="Book.html" class="button book-btn">Plan Your Trip</a>
+                </div>
+                <img src="finedining.jpg" class="hero-photo" alt="Photo of Dining in Island of Taniti" />
+        </section>
+
+        <main class="container">
+
+            <div class="book-links" style="padding: 24px 0 8px; justify-content: flex-start;">
+                <span style="font-size: 14px; color: #555; font-weight: bold; line-height: 2.2;">Filter by:</span>
+                <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
+                <button class="filter-btn" onclick="filterSection('grocery', this)">Grocery</button>
+                <button class="filter-btn" onclick="filterSection('fish', this)">Fish</button>
+                <button class="filter-btn" onclick="filterSection('american', this)">American</button>
+                <button class="filter-btn" onclick="filterSection('asian', this)">Pan-Asian</button>
+            </div>
+
+            <section class="highlight-section" id="grocery">
+                <h2 class="section-title">
+                    <i class="fa fa-water"></i>Grocery &amp; Markets
+                </h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card" data-category="grocery">
+                        <i class="fa fa-store fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Walmart &amp; Ralphs</h3>
+                        <p>Taniti has two supermarkets that are local and provided great cultural variety of groceries!</p>
+                        <p><small>Open from 7am - 11pm</small></p>
+                    </div>
+
+                    <div class="highlight-card" data-category="grocery">
+                        <i class="fa fa-bag-shopping fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Small Grocery Stores</h3>
+                        <p>Taniti offers two family owned small grocery stores names Jans Markets and Taniti Local Grocery that are located outside the city for citizens that live further away.</p>
+                        <p><small>Open from 8am - 7pm</small></p>
+                    </div>
+
+                    <div class="highlight-card" data-category="grocery">
+                        <i class="fa fa-shopping-cart fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Convenience Store</h3>
+                        <p>Taniti has one convience store that offers quick late night or early moring grabs!</p>
+                        <p><small>Open 24/7</small></p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="highlight-section" id="fish">
+                <h2 class="section-title">
+                    <i class="fa fa-fish"></i>Local Fish &amp; Rice
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="fish">
+                        <i class="fa fa-burner fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Fish &amp; Grill</h3>
+                        <p>Offers local fish grilled with more healthy options</p>
+                        <p><small> Walk ins & Reservations  ~  $20+</small></p>
+                        <a href="book.html" class="button book-btn">Reserve</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="fish">
+                        <i class="fa fa-fish-fins fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Fish House</h3>
+                        <p>Fish House offers local fresh fried fish like fish and chips and some of the best local fried shrimp!</p>
+                        <p><small>Order at Counter</small></p>
+                    </div>
+
+                    <div class="highlight-card" data-category="fish">
+                        <i class="fa fa-address-book-o fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Taniti Seafood</h3>
+                        <p>Enjoy some seafood boils with the local seafood caught everyday for special boils!</p>
+                        <p><small>Walk ins / Reservations  ~  $30+</small></p>
+                        <a href="book.html" class="button book-btn">Reserve</a>
+                    </div>
+
+                    <div class="highlight-card" data-category="fish">
+                        <i class="fa fa-tag fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Red Lobster</h3>
+                        <p>Enjoy the american local seafood restraunt that has made its way to our Taniti Island.</p>
+                        <p><small>Walk ins  ~  $15+</small></p>
+                    </div>
+
+                    <div class="highlight-card" data-category="fish">
+                        <i class="fa fa-star fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Fresh Tan-Fish</h3>
+                        <p>Enjoy some gourmet fresh fish dishes made by our gourmet chef!</p>
+                        <p><small>Only Reservations  ~  $40+</small></p>
+                        <a href="book.html" class="button book-btn">Reserve Now</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="highlight-section" id="american">
+                <h2 class="section-title">
+                    <i class="fa fa-burger"></i>American Restaurants
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="american">
+                        <i class="fa fa-cow fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Texas Road House</h3>
+                        <p>Provides variety of steak and country american options!</p>
+                        <p><small>Walk-ins  ~  $15+</small></p>
+                    </div>
+
+                    <div class="highlight-card" data-category="american">
+                        <i class="fa fa-utensils fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>McDonalds</h3>
+                        <p>Fast food with various burger and chicken options</p>
+                        <p><small>Drive-Thru/Walk ins  ~  $10+</small></p>
+                    </div>
+
+                    <div class="highlight-card" data-category="american">
+                        <i class="fa fa-building-columns fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Cheddars</h3>
+                        <p>Offers the traditional american options including pasta, chicken pot pie, and salmon!</p>
+                        <p><small>Walk ins ~  $15+</small></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="highlight-section" id="asian">
+                <h2 class="section-title">
+                    <i class="fa fa-bowl-rice"></i>Pan-Asian Restaurants
+                </h2>
+                <div class="highlight-grid">
+
+                    <div class="highlight-card" data-category="asian">
+                        <i class="fa fa-pepper-hot fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Hot Pot</h3>
+                        <p>All you can eat hot pot with the set price for everyone including fish, meat and vegetarian options.</p>
+                        <p><small>Walk ins  ~  $35 Per Person</small></p>
+                    </div>
+
+
+                    <div class="highlight-card" data-category="asian">
+                        <i class="fa fa-drumstick-bite fa-2x" style="color: #2a6b4f; margin-bottom: 10px;"></i>
+                        <h3>Hibachi &amp; Sushi</h3>
+                        <p>Great family restraunt to share a meal and asian cuisines with sushi, fried rice, and lo mein options!</p>
+                        <p><small>Walk ins  ~  $15+</small></p>
+                    </div>
+
+                </div>    
+            </section>
+
+        </main>
+
+
+        <footer class="site-footer">
+            <p>
+                Taniti Tourism Board &middot;
+            <a href="contact.html">Contact Us</a> &middot;
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="accessibility.html">Accessibility</a>
+            </p>
+            <p class="footer-copy">&copy; 2024 Taniti Island Government. All rights reserved.</p>
+        </footer>
+
+         <script>
+            function filterSection(category, btn) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+ 
+                document.querySelectorAll('.highlight-section').forEach(section => {
+                    if (category === 'all' || section.id === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+    </body>
+</html>       
